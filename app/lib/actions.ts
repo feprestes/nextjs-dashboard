@@ -32,7 +32,7 @@ export type State = {
 };
 
 export async function createInvoice(
-  prevState: StaticRange,
+  prevState: State,
   formData: FormData,
 ) {
   const validatedFields = CreateInvoice.safeParse({
